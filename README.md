@@ -1,5 +1,5 @@
 # Lang_Asm_Proc
-My programming language
+My programming language.
 here you can see not only the language itself but Assembler and Processor also.
 Firstly, you type your code in file, then launch my program-compilator.
 It checks syntax errors and if everything is fine, creates Assembler-Code.
