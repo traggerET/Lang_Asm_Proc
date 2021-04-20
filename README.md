@@ -1,5 +1,7 @@
 # Lang_Asm_Proc
-My programming language.
+Here are three great projects: assembler, processor and programming language. 
+The main one is my programming language.
+
 here you can see not only the language itself but Assembler and Processor also.
 Firstly, you type your code in file, then launch my program-compilator.
 It checks syntax errors and if everything is fine, creates Assembler-Code.
