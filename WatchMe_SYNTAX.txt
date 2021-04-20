@@ -1,0 +1,42 @@
+Abbreviation:
+    Gram | Grammar
+    Prog | Program
+    Defi | Definition
+    FDec | Function declaration
+    Comp | Compound
+    Stat | Statement
+    Expr | Expression
+    Simp | Simple expression
+    Term | Term
+    Prim | Primary grammar (factor)
+    Call | function call
+    Init | Initialization
+    Assg | Assignment
+    Jump | Jump
+    Cond | Conditional statement
+    Loop | Loop
+    Var  | Variable(char*)
+    Num  | Number (Constant)
+
+
+Rules:
+    ~Gram ::= Prog 'EOF' 
+    ~Prog ::= {Defi}+
+    ~Defi ::= FDec Comp
+    ~FDec ::= 'declarator' Var '(' ')' | Var '(' Var  { ',' Var }* ')'
+    ~Comp ::= '{' Stat* '}'
+    ~Stat ::= [Expr, Init, Assg, Jump, Print, Scan] ';' | Cond | Loop
+    Print ::= print '(' Var ')'
+    Scan ::= scan '(' Var ')'
+    Expr ::= Simp {['<', '>', '==', '!=', '<=', '>='] Simp}*
+    Simp ::= Term {['+', '-'] Term}*
+    Term ::= Prim {['*', '/'] Prim}*
+    Prim ::= '(' Expr ')' | Num | Var | Call
+    Call ::= Var '(' ')' | Var '(' Expr { ',' Expr}* ')'
+    Init ::= 'declarator' Var '=' Expr
+    Assg ::= Var '=' Expr
+    Jump ::= 'return' Expr
+    Cond ::= 'if' '(' Expr ')' Comp | 'if' '(' Expr ')' Comp 'else' Comp
+    Loop ::= 'while' '(' Expr ')' Comp
+    Var  ::= ['A' - 'Z', 'a' - 'z', '_'] ['A' - 'Z', 'a' - 'z', '0' - '9', _]*
+    Num  ::= ['0'-'9']+

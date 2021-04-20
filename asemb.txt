@@ -1,0 +1,79 @@
+PUSH 0
+POP rbx
+PUSH 0
+POP [rbx]
+CALL Main
+HLT
+factorial:
+PUSH 1
+PUSH [rbx+1]
+ADD
+POP [rbx+1]
+POP [rbx+2]
+PUSH 1
+PUSH [rbx+1]
+ADD
+POP [rbx+1]
+PUSH 1
+POP [rbx+3]
+PUSH 1
+PUSH [rbx+1]
+ADD
+POP [rbx+1]
+PUSH 1
+POP [rbx+4]
+while3_begin:
+PUSH [rbx+3]
+PUSH [rbx+2]
+BEQ
+PUSH 0
+JE while3_end
+PUSH [rbx+4]
+PUSH [rbx+3]
+MUL
+POP [rbx+4]
+PUSH [rbx+3]
+PUSH 1
+ADD
+POP [rbx+3]
+JMP while3_begin
+while3_end:
+PUSH [rbx+4]
+PUSH [rbx]
+POP rbx
+RET
+Main:
+PUSH 1
+PUSH [rbx+1]
+ADD
+POP [rbx+1]
+PUSH 6
+POP [rbx+2]
+PUSH 1
+PUSH [rbx+1]
+ADD
+POP [rbx+1]
+PUSH 1
+POP [rbx+3]
+IN
+POP [rbx+3]
+PUSH 1
+PUSH [rbx+1]
+ADD
+POP [rbx+1]
+PUSH [rbx+2]
+PUSH rbx
+PUSH rbx
+PUSH [rbx+1]
+ADD
+POP rbx
+POP [rbx]
+CALL factorial
+POP [rbx+4]
+PUSH [rbx+4]
+OUT
+POP [rbx+4]
+PUSH 0
+PUSH [rbx]
+POP rbx
+RET

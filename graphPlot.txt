@@ -1,0 +1,122 @@
+digraph G{
+node [shape="record", style="solid", color="blue"];
+"0x604000000050":sw->"0x604000000090"
+"0x604000000090":sw->"0x6040000000d0"
+"0x6040000000d0" [style="filled", fillcolor="seagreen1", label="{n}"]
+ "0x604000000090":se->"0x604000000110"
+"0x604000000110":sw->"0x604000000210"
+"0x604000000210":sw->"0x6040000001d0"
+"0x6040000001d0" [style="filled", fillcolor="seagreen1", label="{i}"]
+ "0x604000000210":se->"0x604000000250"
+"0x604000000250" [style="filled", fillcolor="lightpink", label="{1}"]
+ "0x604000000210" [style="filled", fillcolor="blue", label="{=}"]
+ "0x604000000110":se->"0x604000000290"
+"0x604000000290":sw->"0x604000000390"
+"0x604000000390":sw->"0x604000000350"
+"0x604000000350" [style="filled", fillcolor="seagreen1", label="{fact}"]
+ "0x604000000390":se->"0x6040000003d0"
+"0x6040000003d0" [style="filled", fillcolor="lightpink", label="{1}"]
+ "0x604000000390" [style="filled", fillcolor="blue", label="{=}"]
+ "0x604000000290":se->"0x604000000410"
+"0x604000000410":sw->"0x604000000450"
+"0x604000000450":sw->"0x604000000510"
+"0x604000000510":sw->"0x6040000004d0"
+"0x6040000004d0" [style="filled", fillcolor="seagreen1", label="{i}"]
+ "0x604000000510":se->"0x604000000590"
+"0x604000000590" [style="filled", fillcolor="seagreen1", label="{n}"]
+ "0x604000000510" [style="filled", fillcolor="blue", label="{<=}"]
+ "0x604000000450":se->"0x6040000005d0"
+"0x6040000005d0":sw->"0x6040000006d0"
+"0x6040000006d0":sw->"0x604000000690"
+"0x604000000690" [style="filled", fillcolor="seagreen1", label="{fact}"]
+ "0x6040000006d0":se->"0x604000000790"
+"0x604000000790":sw->"0x604000000750"
+"0x604000000750" [style="filled", fillcolor="seagreen1", label="{fact}"]
+ "0x604000000790":se->"0x604000000810"
+"0x604000000810" [style="filled", fillcolor="seagreen1", label="{i}"]
+ "0x604000000790" [style="filled", fillcolor="blue", label="{*}"]
+ "0x6040000006d0" [style="filled", fillcolor="blue", label="{=}"]
+ "0x6040000005d0":se->"0x604000000850"
+"0x604000000850":sw->"0x604000000950"
+"0x604000000950":sw->"0x604000000910"
+"0x604000000910" [style="filled", fillcolor="seagreen1", label="{i}"]
+ "0x604000000950":se->"0x604000000a10"
+"0x604000000a10":sw->"0x6040000009d0"
+"0x6040000009d0" [style="filled", fillcolor="seagreen1", label="{i}"]
+ "0x604000000a10":se->"0x604000000a50"
+"0x604000000a50" [style="filled", fillcolor="lightpink", label="{1}"]
+ "0x604000000a10" [style="filled", fillcolor="blue", label="{+}"]
+ "0x604000000950" [style="filled", fillcolor="blue", label="{=}"]
+ "0x604000000850":se->"0x604000000a90"
+"0x604000000a90" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000850" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x6040000005d0" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000450" [style="filled", fillcolor="blue", label="{while}"]
+ "0x604000000410":se->"0x604000000ad0"
+"0x604000000ad0":sw->"0x604000000b10"
+"0x604000000b10":sw->"0x604000000b90"
+"0x604000000b90" [style="filled", fillcolor="seagreen1", label="{fact}"]
+ "0x604000000b10" [style="filled", fillcolor="blue", label="{return}"]
+ "0x604000000ad0":se->"0x604000000bd0"
+"0x604000000bd0" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000ad0" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000410" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000290" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000110" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000090" [style="filled", fillcolor="seagreen1", label="{factorial}"]
+ "0x604000000050":se->"0x604000000c10"
+"0x604000000c10":sw->"0x604000000c50"
+"0x604000000c50":sw->"0x604000000c90"
+"0x604000000c90" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000c50":se->"0x604000000cd0"
+"0x604000000cd0":sw->"0x604000000dd0"
+"0x604000000dd0":sw->"0x604000000d90"
+"0x604000000d90" [style="filled", fillcolor="seagreen1", label="{n}"]
+ "0x604000000dd0":se->"0x604000000e10"
+"0x604000000e10" [style="filled", fillcolor="lightpink", label="{6}"]
+ "0x604000000dd0" [style="filled", fillcolor="blue", label="{=}"]
+ "0x604000000cd0":se->"0x604000000e50"
+"0x604000000e50":sw->"0x604000000f50"
+"0x604000000f50":sw->"0x604000000f10"
+"0x604000000f10" [style="filled", fillcolor="seagreen1", label="{i}"]
+ "0x604000000f50":se->"0x604000000f90"
+"0x604000000f90" [style="filled", fillcolor="lightpink", label="{1}"]
+ "0x604000000f50" [style="filled", fillcolor="blue", label="{=}"]
+ "0x604000000e50":se->"0x604000000fd0"
+"0x604000000fd0":sw->"0x604000001010"
+"0x604000001010":sw->"0x604000001050"
+"0x604000001050" [style="filled", fillcolor="seagreen1", label="{i}"]
+ "0x604000001010" [style="filled", fillcolor="blue", label="{scan}"]
+ "0x604000000fd0":se->"0x604000001090"
+"0x604000001090":sw->"0x604000001190"
+"0x604000001190":sw->"0x604000001150"
+"0x604000001150" [style="filled", fillcolor="seagreen1", label="{result}"]
+ "0x604000001190":se->"0x6040000011d0"
+"0x6040000011d0":sw->"0x604000001210"
+"0x604000001210" [style="filled", fillcolor="seagreen1", label="{n}"]
+ "0x6040000011d0" [style="filled", fillcolor="seagreen1", label="{factorial}"]
+ "0x604000001190" [style="filled", fillcolor="blue", label="{=}"]
+ "0x604000001090":se->"0x604000001250"
+"0x604000001250":sw->"0x604000001290"
+"0x604000001290":sw->"0x6040000012d0"
+"0x6040000012d0" [style="filled", fillcolor="seagreen1", label="{result}"]
+ "0x604000001290" [style="filled", fillcolor="blue", label="{print}"]
+ "0x604000001250":se->"0x604000001310"
+"0x604000001310":sw->"0x604000001350"
+"0x604000001350":sw->"0x604000001390"
+"0x604000001390" [style="filled", fillcolor="lightpink", label="{0}"]
+ "0x604000001350" [style="filled", fillcolor="blue", label="{return}"]
+ "0x604000001310":se->"0x6040000013d0"
+"0x6040000013d0" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000001310" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000001250" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000001090" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000fd0" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000e50" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000cd0" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000c50" [style="filled", fillcolor="seagreen1", label="{Main}"]
+ "0x604000000c10":se->"0x604000001410"
+"0x604000001410" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000c10" [style="filled", fillcolor="gray", label="{LINKER}"]
+ "0x604000000050" [style="filled", fillcolor="gray", label="{LINKER}"]
+ }

@@ -1,0 +1,18 @@
+function factorial(n) {
+	i = 1;
+	fact = 1;
+	while (i <= n) {
+		fact = fact * i;
+		i = i + 1;
+	}
+	return fact;
+}
+function Main() {
+    n = 6;
+    // just pretty comment
+	i = 1;
+	scan(i);
+	result = factorial(n);
+	print(result);
+    return 0;
+}
