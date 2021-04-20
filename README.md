@@ -7,3 +7,6 @@ Then launches Assembler which gets all low-level comands to bin code.
 Now Processor starts execute your program.
 Language->Assembler->Processor
 All are happy:)
+PS. There is tree expression also which is illustrated with help of graphviz.
+The proplem is that it doesnot recognise symbols like '<', '>' and some others 
+so it can look strange in nodes where such symbols are present
