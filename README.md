@@ -1,4 +1,6 @@
 # Lang_Asm_Proc
+The final project of the first semester.
+
 Here are three great projects: assembler, processor and programming language. 
 The main one is my programming language.
 
