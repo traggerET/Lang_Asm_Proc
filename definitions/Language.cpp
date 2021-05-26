@@ -67,7 +67,7 @@ bool Lexem::IsService(LEXEMCODE REQUESTED) const {
 bool Lexem::IsCompare() const {
     return type == SERVICE && CODE < ASSIGN && CODE > CLOSEFIGURED;
 }
-Lexem::Lexem(){fprintf(stderr, "fuck of\n");};
+Lexem::Lexem(){fprintf(stderr, "building lexem\n");};
 Lexem::Lexem(LEXEMCODE NCODE, LEXEMTYPES NTYPE, unsigned line, unsigned colomn, const char *nvalue):
 CODE(NCODE), type(NTYPE), nline(line), ncolomn(colomn) {
     fprintf(stderr, "constructing\n");
